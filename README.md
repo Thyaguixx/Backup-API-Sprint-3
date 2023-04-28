@@ -1,6 +1,6 @@
 # Códigos-do-API
 
-<p><b>SUBIR O CÓDIGO SEM O NODE_MODULES!</b></p>
+<p><b>Backup API da Sprint 3</b></p>
 
 <h2>Digitar o seguinte comando no terminal da pasta frontend:</h2>
 
