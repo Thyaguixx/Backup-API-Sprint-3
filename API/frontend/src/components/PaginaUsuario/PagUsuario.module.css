@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:wght@400;600;700&display=swap');
+
+body, html {
+    font-family: Nunito, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.PaginaUsuario{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* INFO */
+.Informacoes {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.paragrafo1 {
+  font-family: Nunito, sans-serif;
+  margin-top: 61px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 58px;
+  line-height: 29px;
+  font-weight: 500px;
+
+}
+
+.paragrafo2 {
+  margin-bottom: -10px;
+  width: 270px;
+  height: 26px;
+  margin-left: 58px;
+  margin-top: 16px;
+  font-family: Nunito, sans-serif;
+  line-height: 19px;
+  
+}
+
+.botaozao {
+  margin-top: 50px;
+  width: 270px;
+  height: 44px;
+  border: none;
+  margin-left: 26px;
+  background: #D9D9D9;
+  font-family: Nunito, sans-serif;
+  cursor: pointer;
+}
+
+
+
+
+/*NAVBAR*/
+
+.NavbarUser{
+  width: 100%;
+  height: 80px;
+  background-color: #D3D3D3;
+  font-family: Nunito, sans-serif;
+  display: flex;
+  z-index: 1;
+}
+
+.NavbarUser .ladoEsquerdoUser{
+  flex: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.NavbarUser .ladoEsquerdoUser .logoUser{
+  max-height: 80px;
+}
+
+.NavbarUser .ladoEsquerdoUser .logoUser img{
+  width: 155px;
+  height: 55px;
+  margin-left: 20%;
+}
+
+.NavbarUser .ladoEsquerdoUser .separadorUser{
+  color: #888585;
+  font-size: 20px;
+  margin-left: 45px;
+  max-height: 80px;
+}
+
+.NavbarUser .ladoEsquerdoUser .txt1User{
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  margin-left: 10px;
+  max-height: 80px;
+}
+
+.NavbarUser .ladoEsquerdoUser .txt2User{
+  color: rgb(49, 49, 49);
+  font-size: 15px;
+  margin-left: 3px;
+  max-height: 80px;
+}
+
+.NavbarUser .ladoDireitoUser{
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.NavbarUser .ladoDireitoUser .dropdownUser{
+  max-height: 80px;
+}
+
+.NavbarUser .ladoDireitoUser .dropdownUser img{
+  height: 40px;
+  width: 60px;
+  margin-right: 10px;
+}
+
+.NavbarUser .ladoDireitoUser .dropdownUser:hover{
+  cursor: pointer;
+}
+
+.NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+  position: absolute;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  display: none;
+  background-color: white;
+  left: 92%;
+  opacity: 1;
+}
+
+.NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser a{
+  text-decoration: none;
+  display: block;
+  padding: 5px 6px;
+  margin: 1px 1px 1px 1px;
+  color: black;
+}
+
+.NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser a:hover{
+  background-color: #f1f1f1;
+}
+
+.NavbarUser .ladoDireitoUser .dropdownUser:hover .dropdownMenuUser{
+  display: block;
+  opacity: 1;
+}
+
+/*FOOTER*/
+
+.FooterUser{
+  width: 100%;
+  height: 80px;
+  background-color: #D3D3D3;
+  font-family: Nunito, sans-serif;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+.FooterUser .ladoEsquerdoUser{
+  flex: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.FooterUser .ladoEsquerdoUser .txt1User{
+  max-height: 80px;
+  font-size: 0.8rem;
+  color: #5B5858;
+  font-weight: bold;
+  margin-right: 200px;
+}
+
+.FooterUser .ladoEsquerdoUser .txt1User p{
+  display: block;
+  margin: 2px;
+}
+
+.FooterUser .ladoDireitoUser{
+  flex: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.FooterUser .ladoDireitoUser .imgFacebookUser{
+  max-height: 80px;
+}
+
+.FooterUser .ladoDireitoUser .imgFacebookUser img{
+  width: 60px;
+  height: 50px;
+}
+
+.FooterUser .ladoDireitoUser .imgLinkedinUser{
+  max-height: 80px;
+}
+
+.FooterUser .ladoDireitoUser .imgLinkedinUser img{
+  width: 60px;
+  height: 50px;
+  margin-right: 6px;
+}
+
+.FooterUser .ladoDireitoUser .imgEmailUser{
+  max-height: 80px;
+}
+
+.FooterUser .ladoDireitoUser .imgEmailUser img{
+  width: 45px;
+  height: 40px;
+  margin-right: 11px;
+}
+
+.FooterUser .ladoDireitoUser .imgGitUser{
+  max-height: 80px;
+}
+
+.FooterUser .ladoDireitoUser .imgGitUser img{
+  width: 60px;
+  height: 40px;
+  margin-right: 60px;
+}
+
+/*Tabelas*/
+
+.containerTableDireitaUser .tableUser{
+  margin-left: 550px;
+  margin-right: 10px;
+  margin-top: -300px;
+  margin-bottom: -50px;
+  width: 850px;
+  z-index: 1;
+}
+
+.containerTableDireitaUser .tableUser table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.containerTableDireitaUser .tableUser td, th {
+  border: 1px solid #DED5D5;
+  text-align: center;
+  padding: 8px;
+}
+
+.containerTableDireitaUser .tableUser td{
+  background-color: #ffffff;
+}
+
+.containerTableDireitaUser .tableUser th{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.containerTableDireitaUser .tableUser .mesclaUser{
+  background-color: #413944;
+  color: #ffffff
+}
+
+
+.containerTableDireitaUser .tableUser .nomeUser{
+  padding: 20px;
+}
+
+/*Filtro e Barra*/
+
+.containerTableDireitaUser .filtroBarraUser{
+  margin-top: 0%;
+  margin-right: 10%;
+  margin-bottom: 0.9%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.containerTableDireitaUser .filtroBarraUser select, option {
+  text-align: center;
+}
+
+.containerTableDireitaUser .filtroBarraUser .relogioUser img{
+  margin-top: 1%;
+  width: 59px;
+  padding: 3px;
+}
+
+.containerTableDireitaUser .filtroBarraUser .filtroUser{
+  margin-right: 5px;
+}
+
+.containerTableDireitaUser .filtroBarraUser .filtroUser select{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+}
+
+.containerTableDireitaUser .filtroBarraUser .filtroUser select option{
+  background-color: white;
+  text-align: center;
+}
+
+select option:hover{
+  background-color: #f1f1f1;
+}
+
+/*Paginacao*/
+
+.paginacaoUser{
+  justify-content: space-between;
+  
+}
+
+.botaoPaginacao01User{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 1%;
+}
+.botaoPaginacao02User{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.botaoPaginacao01User:hover {
+  background-color: rgb(177, 170, 170);
+  color: white;
+}  
+.botaoPaginacao02User:hover {
+  background-color: rgb(177, 170, 170);
+  color: white;
+}  
+
+/*Responsividade*/
+@media only screen and (min-width: 2201px) and (max-width: 2500px){
+  .containerTableDireitaUser .tableUser{
+    width: 1650px;
+  }
+}
+
+@media only screen and (min-width: 2002px) and (max-width: 2200px){
+  .containerTableDireitaUser .tableUser{
+    width: 1450px;
+  }
+}
+
+@media only screen and (min-width: 1851px) and (max-width: 2001px){
+  .containerTableDireitaUser .tableUser{
+    width: 1260px;
+  }
+}
+
+@media only screen and (min-width: 1651px) and (max-width: 1850px){
+  .containerTableDireitaUser .tableUser{
+    width: 1100px;
+  }
+}
+
+@media only screen and (min-width: 1550px) and (max-width: 1650px){
+  .containerTableDireitaUser .tableUser{
+    width: 1000px;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser a{
+    font-size: 1.2rem;
+  }
+  .NavbarUser .ladoEsquerdoUser .logoUser img{
+    width: 140px;
+  }
+  .NavbarUser .ladoEsquerdoUser .separadorUser{
+      font-size: 25px;
+      margin-left: 45px;
+  }
+    
+  .NavbarUser .ladoEsquerdoUser .txt1User {
+      font-size: 20px;
+      margin-left: 15px;
+  }
+    
+  .NavbarUser .ladoEsquerdoUser .txt2User {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  .NavbarUser .ladoDireitoUser .dropdownUser img{
+      height: 50px;
+      width: 50px;
+      margin-right: 5px;
+  }
+  .FooterUser .ladoEsquerdoUser .txt1User{
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px){
+  .containerTableDireitaUser .tableUser{
+    width: 750px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1299px){
+  .containerTableDireitaUser .tableUser{
+    width: 650px;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 89%;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1199px){
+  .containerTableDireitaUser .tableUser{
+    width: 660px;
+    margin-left: 400px;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 89%;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1099px){
+  .containerTableDireitaUser .tableUser{
+    width: 600px;
+    margin-left: 400px;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 89%;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 999px){
+  .containerTableDireitaUser .tableUser{
+    width: 550px;
+    margin-left: 350px;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 85%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px){
+  .containerTableDireitaUser .tableUser{
+    width: 450px;
+    margin-left: 350px;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 85%;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 799px){
+  .containerTableDireitaUser .tableUser{
+    width: 420px;
+    margin-left: 340px;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 85%;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 759px){
+  .containerTableDireitaUser .tableUser{
+    width: 350px;
+    margin-left: 340px;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 80%;
+  }
+  .FooterUser .ladoEsquerdoUser .txt1User{
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 636px) and (max-width: 690px){
+  .containerTableDireitaUser .tableUser{
+    width: 380px;
+    margin-left: 250px;
+    font-size: 0.8rem;
+ 
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 80%;
+  }
+  .containerGeralUser{
+    font-size: 0.8rem;
+    margin-left: -40px;
+  }
+
+  .paragrafo1{
+    font-size: 0.8rem;
+  }
+  .botaozao{
+    width: 100px;
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+  .FooterUser .ladoEsquerdoUser .txt1User{
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 555px) and (max-width: 635px){
+  .containerTableDireitaUser .tableUser{
+    width: 300px;
+    margin-left: 250px;
+    font-size: 0.8rem;
+ 
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 80%;
+  }
+  .FooterUser .ladoEsquerdoUser .txt1User{
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+  .containerGeralUser{
+    font-size: 0.8rem;
+    margin-left: -40px;
+  }
+
+  .paragrafo1{
+    font-size: 0.8rem;
+  }
+  .botaozao{
+    width: 100px;
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 554px){
+  .containerTableDireitaUser .tableUser{
+    width: 250px;
+    margin-left: 230px;
+    font-size: 0.7rem;
+ 
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 75%;
+  }
+  .FooterUser .ladoEsquerdoUser .txt1User{
+    font-size: 0.75rem;
+    margin-right: 10px;
+  }
+    .FooterUser .ladoDireitoUser .imgFacebookUser{
+      max-height: 60px;
+  }
+
+  .FooterUser .ladoDireitoUser .imgFacebookUser img{
+      width: 40px; 
+      height: 33.33px;
+  }
+
+  .FooterUser .ladoDireitoUser .imgLinkedinUser{
+      max-height: 60px;
+  }
+
+  .FooterUser .ladoDireitoUser .imgLinkedinUser img{
+      width: 40px;
+      height: 33.33px;
+      margin-right: 4px;
+  }
+  .FooterUserUser .ladoDireitoUserUser .imgEmailUser{
+      max-height: 60px;
+  }
+
+  .FooterUser .ladoDireitoUser .imgEmailUser img{
+      width: 30px;
+      height: 26.67px;
+      margin-right: 7px;
+  }
+
+  .FooterUser .ladoDireitoUser .imgGitUser{
+      max-height: 60px;
+  }
+
+  .FooterUser .ladoDireitoUser .imgGitUser img{
+      width: 40px;
+      height: 26.67px;
+      margin-right: 40px;
+  }
+  .containerGeralUser{
+    font-size: 0.7rem;
+    margin-left: -40px;
+  }
+
+  .paragrafo1{
+    font-size: 0.7rem;
+  }
+  .botaozao{
+    width: 95px;
+    margin-left: 15%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 480px){
+  .containerTableDireitaUser .tableUser{
+    width: 200px;
+    margin-left: 215px;
+    font-size: 0.8rem;
+ 
+  }
+  .NavbarUser .ladoEsquerdoUser .txt1User {
+    font-size: 0.7rem;
+    margin-left: 10px;
+  }
+  
+  .NavbarUser .ladoEsquerdoUser .txt2User {
+    font-size: 0.7rem;
+    margin-left: 5px;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 70%;
+  }
+  .FooterUser .ladoDireitoUser .imgFacebookUser img{
+      width: 25px;
+      height: 20.67px;
+  }
+
+  .FooterUser .ladoDireitoUser .imgLinkedinUser img{
+      width: 25px;
+      height: 20.67px;
+      margin-right: 4px;
+  }
+
+  .FooterUser .ladoDireitoUser .imgEmailUser img{
+      width: 20px;
+      height: 20.67px;
+      margin-right: 7px;
+  }
+
+  .FooterUser .ladoDireitoUser .imgGitUser img{
+      width: 25px;
+      height: 20.67px;
+      margin-right: 3rem;
+  }
+  .containerGeralUser{
+    font-size: 0.7rem;
+    margin-left: -40px;
+  }
+
+  .paragrafo1{
+    font-size: 0.7rem;
+  }
+  .botaozao{
+    width: 95px;
+    margin-left: 15%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 355px) and (max-width: 414px){
+  .containerTableDireitaUser .tableUser{
+    width: 180px;
+    margin-left: 175px;
+    font-size: 0.7rem;
+ 
+  }
+  .NavbarUser .ladoEsquerdoUser .logoUser img{
+    width: 125px;
+  }
+  .NavbarUser .ladoEsquerdoUser .separadorUser{
+    font-size: 1rem;
+    margin-left: 35px;
+  }
+  .NavbarUser .ladoEsquerdoUser .txt1User {
+    font-size: 0.6rem;
+    margin-left: 5px;
+  }
+  
+  .NavbarUser .ladoEsquerdoUser .txt2User {
+    font-size: 0.6rem;
+    margin-left: 5px;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 67%;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser img{
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+  }
+  .FooterUser .ladoEsquerdoUser .txt1User{
+    font-size: 0.6rem;
+    margin-right: 10px;
+  }
+
+  .containerGeralUser{
+    font-size: 0.6rem;
+    margin-left: -47px;
+  }
+
+  .paragrafo1{
+    font-size: 0.6rem;
+  }
+  .botaozao{
+    width: 95px;
+    margin-left: 15%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 354px){
+  .containerTableDireitaUser .tableUser{
+    width: 140px;
+    margin-left: 175px;
+    font-size: 0.6rem;
+ 
+  }
+  .NavbarUser .ladoEsquerdoUser .logoUser img{
+    width: 125px;
+  }
+  .NavbarUser .ladoEsquerdoUser .separadorUser{
+    font-size: 1rem;
+    margin-left: 35px;
+  }
+  .NavbarUser .ladoEsquerdoUser .txt1User {
+    font-size: 0.5rem;
+    margin-left: 10px;
+  }
+  .NavbarUser .ladoEsquerdoUser .txt2User {
+    font-size: 0.6rem;
+    margin-left: 5px;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser .dropdownMenuUser{
+    left: 65%;
+  }
+  .NavbarUser .ladoDireitoUser .dropdownUser img{
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+  }
+  .FooterUser .ladoEsquerdoUser .txt1User{
+    font-size: 0.6rem;
+    margin-right: 10px;
+  }
+  .containerGeralUser{
+    font-size: 0.58rem;
+    margin-left: -47px;
+  }
+
+  .paragrafo1{
+    font-size: 0.58rem;
+  }
+  .botaozao{
+    width: 95px;
+    margin-left: 20%;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:wght@400;600;700&display=swap');
+
+.botao{
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: Nunito, sans-serif;
+    background: linear-gradient(to left, #de940a, #ff5c21);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.primeiraDiv {
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo{
+    justify-content: "center";
+    background: white;
+    border-radius: 8px;
+    width: 300px;
+    margin-top: -100px;
+    padding: 20px;
+    animation: dropTop .3s linear;
+}
+
+.header{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+.h1 {
+    margin: 0;
+    font-family: Nunito, sans-serif;
+}
+
+.titulo {
+    cursor: pointer;
+    position: absolute;
+    top: 10;
+    right: 10;
+}
+
+.espaçamento1 {
+    margin-top: 8px;
+}
+
+.espaçamento2 {
+    margin-bottom: 15px;
+}

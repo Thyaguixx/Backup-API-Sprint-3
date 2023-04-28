@@ -1,0 +1,947 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:wght@400;600;700&display=swap');
+
+body, html {
+    font-family: Nunito, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.PaginaAdmin{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*NAVBAR*/
+
+.Navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #D3D3D3;
+    font-family: Nunito, sans-serif;
+    display: flex;
+    z-index: 1;
+}
+
+.Navbar .ladoEsquerdo{
+    flex: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.Navbar .ladoEsquerdo .logo{
+    max-height: 80px;
+}
+
+.Navbar .ladoEsquerdo .logo img{
+    width: 155px;
+    height: 55px;
+    margin-left: 20%;
+}
+
+.Navbar .ladoEsquerdo .separador{
+    color: #888585;
+    font-size: 20px;
+    margin-left: 45px;
+    max-height: 80px;
+}
+
+.Navbar .ladoEsquerdo .txt1{
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    margin-left: 10px;
+    max-height: 80px;
+}
+
+.Navbar .ladoEsquerdo .txt2{
+    color: rgb(49, 49, 49);
+    font-size: 15px;
+    margin-left: 3px;
+    max-height: 80px;
+}
+
+.Navbar .ladoDireito{
+    flex: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Navbar .ladoDireito .dropdown{
+    max-height: 80px;
+}
+
+.Navbar .ladoDireito .dropdown img{
+    height: 40px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.Navbar .ladoDireito .dropdown:hover{
+    cursor: pointer;
+}
+
+.Navbar .ladoDireito .dropdown .dropdownMenu{
+    position: absolute;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+    background-color: white;
+    left: 92%;
+    opacity: 1;
+}
+
+.Navbar .ladoDireito .dropdown .dropdownMenu a{
+    text-decoration: none;
+    display: block;
+    padding: 5px 6px;
+    margin: 1px 1px 1px 1px;
+    color: black;
+}
+
+.Navbar .ladoDireito .dropdown .dropdownMenu a:hover{
+    background-color: #f1f1f1;
+}
+
+.Navbar .ladoDireito .dropdown:hover .dropdownMenu{
+    display: block;
+    opacity: 1;
+}
+
+/*FOOTER*/
+
+.Footer{
+    width: 100%;
+    height: 80px;
+    background-color: #D3D3D3;
+    font-family: Nunito, sans-serif;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+.Footer .ladoEsquerdo{
+    flex: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.Footer .ladoEsquerdo .txt1{
+    max-height: 80px;
+    font-size: 0.8rem;
+    color: #5B5858;
+    font-weight: bold;
+    margin-right: 200px;
+}
+
+.Footer .ladoEsquerdo .txt1 p{
+    display: block;
+    margin: 2px;
+}
+
+.Footer .ladoDireito{
+    flex: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.Footer .ladoDireito .imgFacebook{
+    max-height: 80px;
+}
+
+.Footer .ladoDireito .imgFacebook img{
+    width: 60px;
+    height: 50px;
+}
+
+.Footer .ladoDireito .imgLinkedin{
+    max-height: 80px;
+}
+
+.Footer .ladoDireito .imgLinkedin img{
+    width: 60px;
+    height: 50px;
+    margin-right: 6px;
+}
+
+.Footer .ladoDireito .imgEmail{
+    max-height: 80px;
+}
+
+.Footer .ladoDireito .imgEmail img{
+    width: 45px;
+    height: 40px;
+    margin-right: 11px;
+}
+
+.Footer .ladoDireito .imgGit{
+    max-height: 80px;
+}
+
+.Footer .ladoDireito .imgGit img{
+    width: 60px;
+    height: 40px;
+    margin-right: 60px;
+}
+
+/*Tabelas*/
+
+.containerGeralTables{
+    width: 100%;
+    height: 629px;
+    background-color: #ffffff;
+    font-family: Nunito, sans-serif;
+    display: flex;
+}
+
+.containerTablesEsquerda{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    display: block;
+}
+
+.containerTablesEsquerda .tableHistorico{
+    max-height: 629px;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    z-index: 1;
+}
+
+.containerTablesEsquerda .tableHistorico table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    padding: 4%;
+}
+
+.containerTablesEsquerda .tableHistorico td, th {
+    border: 1px solid #DED5D5;
+    text-align: center;
+    padding: 8px;
+}
+
+.containerTablesEsquerda .tableHistorico td{
+    border: 0.2px solid #b1a9a9;
+    background-color: #F1F1F1;
+}
+
+.containerTablesEsquerda .tableHistorico th{
+    border: 0.2px solid #b1a9a9;
+    background-color: #D9D9D9;
+    color: rgb(0, 0, 0);
+}
+
+.containerTablesEsquerda .tableHistorico .mescla{
+    border: 1px solid #413944;
+    background-color: #413944;
+    color: white;
+}
+
+.containerTablesEsquerda .tableGrafico{
+    max-height: 629px;
+    margin-left: 3%;
+    z-index: 0;
+}
+
+.containerTablesEsquerda .tableGrafico table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    padding: 4%;
+}
+
+.containerTablesEsquerda .tableGrafico td, th {
+    border: 1px solid #DED5D5;
+    text-align: center;
+    padding: 8px;
+}
+
+.containerTablesEsquerda .tableGrafico td{
+    background-color: #ffffff;
+}
+
+.containerTablesEsquerda .tableGrafico .mescla{
+    background-color: #413944;
+    color: white;
+}
+
+.containerTableDireita{
+    flex: 50%;
+    background-color: #ffffff;
+    display: block;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+}
+
+.containerTableDireita .tableUsers{
+    max-height: 629px;
+    margin-top: 1%;
+    z-index: 1;
+}
+
+.containerTableDireita .tableUsers table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.containerTableDireita .tableUsers td, th {
+    border: 1px solid #DED5D5;
+    text-align: center;
+    padding: 8px;
+}
+
+.containerTableDireita .tableUsers td{
+    background-color: #F1F1F1;
+}
+
+.containerTableDireita .tableUsers th{
+    background-color: #413944;
+    color: white;
+}
+
+.containerTableDireita .tableUsers .mescla{
+    background-color: #413944;
+}
+
+.containerTableDireita .tableUsers .situacaoOn input[type="button"]{
+    background-color: #3CC03A;
+    border: none;
+    border-radius: 10px;
+    width: 50px;
+}
+
+.containerTableDireita .tableUsers .nomeUser{
+    padding: 20px;
+}
+
+.containerTableDireita .tableUsers .excluir img{
+    width: 25px;
+}
+
+.containerTableDireita .tableUsers .editar img{
+    width: 20px;
+    padding: 3px;
+}
+
+/*Filtro e Barra Acões*/
+
+.containerTableDireita .filtroBarra{
+    margin-top: 5%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.containerTableDireita .filtroBarra select, option {
+    text-align: center;
+}
+
+.containerTableDireita .filtroBarra .relogio img{
+    margin-top: 1%;
+    width: 59px;
+    padding: 3px;
+}
+
+.containerTableDireita .filtroBarra .filtro{
+    margin-right: 5px;
+}
+
+.containerTableDireita .filtroBarra .filtro select{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.containerTableDireita .filtroBarra .filtro select option{
+    background-color: white;
+    text-align: center;
+}
+
+.containerTableDireita .filtroBarra .barra input{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 16px;
+    margin-right: 4px;
+    box-shadow: 0px 1px 1px rgba(48, 47, 47, 0.1);
+    background-color: #E8E6E9;
+    color: #000000;
+}
+
+.containerTableDireita .filtroBarra .barra .input:hover, .input:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*Filtro e Barra Histórico*/
+
+.containerTablesEsquerda .filtroBarraHistorico{
+    margin-top: 5%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.containerTablesEsquerda .filtroBarraHistorico select, option {
+    text-align: center;
+}
+
+.containerTablesEsquerda .filtroBarraHistorico .relogioHistorico img{
+    margin-top: 1%;
+    width: 59px;
+    padding: 3px;
+}
+
+.containerTablesEsquerda .filtroBarraHistorico .filtroHistorico{
+    margin-right: 5px;
+}
+
+.containerTablesEsquerda .filtroBarraHistorico .filtroHistorico select{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.containerTablesEsquerda .filtroBarraHistorico .filtroHistorico select option{
+    background-color: white;
+    text-align: center;
+}
+
+.containerTablesEsquerda .filtroBarraHistorico .barraHistorico input{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 16px;
+    margin-right: 4px;
+    box-shadow: 0px 1px 1px rgba(48, 47, 47, 0.1);
+    background-color: #E8E6E9;
+    color: #000000;
+}
+
+.containerTablesEsquerda .filtroBarraHistorico .barraHistorico .input:hover, .input:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+select option:hover{
+    background-color: #f1f1f1;
+}
+
+/*PAGINACAO*/
+
+.paginacao {
+    justify-content: space-between;
+    
+  }
+  
+  .botaoPaginacao01{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 1%;
+  }
+  .botaoPaginacao02{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .botaoPaginacao01:hover {
+    background-color: rgb(177, 170, 170);
+    color: white;
+  }  
+  .botaoPaginacao02:hover {
+    background-color: rgb(177, 170, 170);
+    color: white;
+  }  
+
+@media only screen and (min-width: 654px) and (max-width: 768px){
+    .Navbar {
+        height: 60px;
+    }
+      
+    .Navbar .ladoEsquerdo .logo img {
+        width: 120px;
+        height: 40px;
+        margin-left: 10%;
+    }
+      
+    .Navbar .ladoEsquerdo .separador {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+      
+    .Navbar .ladoEsquerdo .txt1 {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+      
+    .Navbar .ladoEsquerdo .txt2 {
+        font-size: 12px;
+    }
+
+    .Navbar .ladoDireito .dropdown img {
+        height: 30px;
+        width: 40px;
+        margin-right: 5px;
+    }
+      
+    .Navbar .ladoDireito .dropdown .dropdownMenu {
+        left: 80%;
+    }
+      
+    .Navbar .ladoDireito .dropdown .dropdownMenu a {
+        font-size: 12px;
+    }
+
+    .Footer{
+        width: 100%;
+        height: 60px;
+        background-color: #D3D3D3;
+        font-family: Nunito, sans-serif;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+    .Footer .ladoEsquerdo{
+        flex: 50%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    
+    .Footer .ladoEsquerdo .txt1{
+        max-height: 60px;
+        font-size: 0.8rem;
+        color: #5B5858;
+        font-weight: bold;
+        margin-right: 20px; 
+    }
+    
+    .Footer .ladoEsquerdo .txt1 p{
+        display: block;
+        margin: 2px;
+    }
+    
+    .Footer .ladoDireito{
+        flex: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    .Footer .ladoDireito .imgFacebook{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgFacebook img{
+        width: 40px;
+        height: 33.33px;
+    }
+    
+    .Footer .ladoDireito .imgLinkedin{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgLinkedin img{
+        width: 40px;
+        height: 33.33px;
+        margin-right: 4px;
+    }
+    
+    .Footer .ladoDireito .imgEmail{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgEmail img{
+        width: 30px;
+        height: 26.67px;
+        margin-right: 7px;
+    }
+    
+    .Footer .ladoDireito .imgGit{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgGit img{
+        width: 40px;
+        height: 26.67px;
+        margin-right: 40px;
+    }
+
+    .containerGeralTables {
+        height: auto;
+        flex-direction: column;
+    }
+
+
+}
+
+@media only screen and (min-width: 404px) and (max-width: 653px){
+    .Navbar {
+        height: 60px;
+    }
+      
+    .Navbar .ladoEsquerdo .logo img {
+        width: 120px;
+        height: 40px;
+        margin-left: 10%;
+    }
+      
+    .Navbar .ladoEsquerdo .separador {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+      
+    .Navbar .ladoEsquerdo .txt1 {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+      
+    .Navbar .ladoEsquerdo .txt2 {
+        font-size: 12px;
+    }
+
+    .Navbar .ladoDireito .dropdown img {
+        height: 30px;
+        width: 40px;
+        margin-right: 5px;
+    }
+      
+    .Navbar .ladoDireito .dropdown .dropdownMenu {
+        left: 80%;
+    }
+      
+    .Navbar .ladoDireito .dropdown .dropdownMenu a {
+        font-size: 12px;
+    }
+
+    .Footer{
+        width: 100%;
+        height: 60px;
+        background-color: #D3D3D3;
+        font-family: Nunito, sans-serif;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+    .Footer .ladoEsquerdo{
+        flex: 50%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    
+    .Footer .ladoEsquerdo .txt1{
+        max-height: 60px;
+        font-size: 0.8rem;
+        color: #5B5858;
+        font-weight: bold;
+        margin-right: 20px; /* ajuste a margem direita */
+    }
+    
+    .Footer .ladoEsquerdo .txt1 p{
+        display: block;
+        margin: 2px;
+    }
+    
+    .Footer .ladoDireito{
+        flex: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    .Footer .ladoDireito .imgFacebook{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgFacebook img{
+        width: 40px; /* redimensione as imagens */
+        height: 33.33px;
+    }
+    
+    .Footer .ladoDireito .imgLinkedin{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgLinkedin img{
+        width: 40px;
+        height: 33.33px;
+        margin-right: 4px;
+    }
+    
+    .Footer .ladoDireito .imgEmail{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgEmail img{
+        width: 30px;
+        height: 26.67px;
+        margin-right: 7px;
+    }
+    
+    .Footer .ladoDireito .imgGit{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgGit img{
+        width: 40px;
+        height: 26.67px;
+        margin-right: 40px;
+    }
+
+    .containerGeralTables {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .containerGeralTables .containerTablesEsquerda .tableHistorico{
+        font-size: 0.8rem;
+    }
+
+    .containerGeralTables .containerTablesEsquerda .tableGrafico{
+        font-size: 0.5rem;
+        width: 80%;
+    }
+
+    .containerGeralTables .containerTableDireita .tableUsers{
+        font-size: 0.8rem;
+    }
+
+    .containerTableDireita .tableUsers .situacaoOn input[type="button"]{ 
+        border-radius: 10px;
+        width: 30px;
+    }
+
+    .containerTableDireita .tableUsers .excluir img{
+        width: 15px;
+    }
+    
+    .containerTableDireita .tableUsers .editar img{
+        width: 10px;
+        padding: 3px;
+    }
+
+    .containerTableDireita .filtroBarra{
+        font-size: 0.8rem;
+    }
+    
+    .containerTableDireita .filtroBarra .barra input{
+        font-size: 10px;
+    }
+    
+    .containerTableDireita .filtroBarra .barra button{
+        font-size: 10px;
+    }
+    
+    .containerTableDireita .filtroBarra .filtro select{
+        font-size: 10px;
+    }
+    
+    .containerTableDireita .filtroBarra .filtro select option{
+        background-color: white;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 403px){
+    .Navbar {
+        height: 60px;
+    }
+      
+    .Navbar .ladoEsquerdo .logo img {
+        width: 120px;
+        height: 40px;
+        margin-left: 10%;
+    }
+      
+    .Navbar .ladoEsquerdo .separador {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+      
+    .Navbar .ladoEsquerdo .txt1 {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+      
+    .Navbar .ladoEsquerdo .txt2 {
+        font-size: 12px;
+    }
+
+    .Navbar .ladoDireito .dropdown img {
+        height: 30px;
+        width: 40px;
+        margin-right: 5px;
+    }
+      
+    .Navbar .ladoDireito .dropdown .dropdownMenu {
+        left: 80%;
+    }
+      
+    .Navbar .ladoDireito .dropdown .dropdownMenu a {
+        font-size: 12px;
+    }
+
+    .Footer{
+        width: 100%;
+        height: 60px;
+        background-color: #D3D3D3;
+        font-family: Nunito, sans-serif;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+    .Footer .ladoEsquerdo{
+        flex: 50%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    
+    .Footer .ladoEsquerdo .txt1{
+        max-height: 60px;
+        font-size: 0.8rem;
+        color: #5B5858;
+        font-weight: bold;
+        margin-right: 20px; /* ajuste a margem direita */
+    }
+    
+    .Footer .ladoEsquerdo .txt1 p{
+        display: block;
+        margin: 2px;
+    }
+    
+    .Footer .ladoDireito{
+        flex: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    .Footer .ladoDireito .imgFacebook{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgFacebook img{
+        width: 40px; /* redimensione as imagens */
+        height: 33.33px;
+    }
+    
+    .Footer .ladoDireito .imgLinkedin{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgLinkedin img{
+        width: 40px;
+        height: 33.33px;
+        margin-right: 4px;
+    }
+    
+    .Footer .ladoDireito .imgEmail{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgEmail img{
+        width: 30px;
+        height: 26.67px;
+        margin-right: 7px;
+    }
+    
+    .Footer .ladoDireito .imgGit{
+        max-height: 60px;
+    }
+    
+    .Footer .ladoDireito .imgGit img{
+        width: 40px;
+        height: 26.67px;
+        margin-right: 40px;
+    }
+
+    .containerGeralTables {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .containerGeralTables .containerTablesEsquerda .tableHistorico{
+        font-size: 0.8rem;
+    }
+
+    .containerGeralTables .containerTablesEsquerda .tableGrafico{
+        font-size: 0.5rem;
+        width: 80%;
+    }
+
+    .containerGeralTables .containerTableDireita .tableUsers{
+        font-size: 0.7rem;
+    }
+
+    .containerTableDireita .tableUsers .situacaoOn input[type="button"]{ 
+        border-radius: 10px;
+        width: 30px;
+    }
+
+    .containerTableDireita .tableUsers .excluir img{
+        width: 15px;
+    }
+    
+    .containerTableDireita .tableUsers .editar img{
+        width: 10px;
+        padding: 3px;
+    }
+
+    .containerTableDireita .filtroBarra{
+        font-size: 0.8rem;
+    }
+    
+    .containerTableDireita .filtroBarra .barra input{
+        font-size: 10px;
+    }
+    
+    .containerTableDireita .filtroBarra .barra button{
+        font-size: 10px;
+    }
+    
+    .containerTableDireita .filtroBarra .filtro select{
+        font-size: 10px;
+    }
+    
+    .containerTableDireita .filtroBarra .filtro select option{
+        background-color: white;
+    }
+}
